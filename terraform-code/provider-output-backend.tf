@@ -10,7 +10,8 @@ terraform {
 
 provider "aws" {
 #  shared_credentials_file  = "${var.cred-file}" # we don't use it in CodeBuild
-  role_arn    = "${var.role}"
+  #role_arn    = "${var.role}"
+  role_arn = "arn:aws:iam::371736344187:role/terraform-admin"
   region     = "${var.region}"
 }
 
