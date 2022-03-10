@@ -9,9 +9,9 @@ terraform {
 }
 
 provider "aws" {
-  assume_role {
-    role_arn = "arn:aws:iam::371736344187:role/terraform-admin"
-  }  
+#  shared_credentials_file  = "${var.cred-file}" # we don't use it in CodeBuild
+  profile    = "${var.profile}"
+  region     = "${var.region}"
 }
 
 /* THIS SYNTAX IS NOT WORKING */
