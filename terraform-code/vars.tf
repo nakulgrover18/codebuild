@@ -10,10 +10,10 @@ variable "region" {
 }
 
 variable "prefix" {
-    default = "pepapp1"
+    default = "test"
     description = "The prefix used to build the elements"
 }
 
 variable "profile" {
-  default = "default"
+  default = "arn:aws:iam::371736344187:role/terraform-admin"
 }
