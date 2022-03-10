@@ -9,9 +9,9 @@ terraform {
 }
 
 provider "aws" {
-    access_key = "AKIAVNDJWOZ57GAHAA34"
-    secret_key = "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"
-    region = "us-east-1"
+  assume_role {
+    role_arn = "arn:aws:iam::371736344187:role/terraform-admin"
+  }  
 }
 
 /* THIS SYNTAX IS NOT WORKING */
