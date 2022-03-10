@@ -23,3 +23,4 @@ resource "aws_instance" "example" {
      instance_type = "t2.micro"
      #security_groups = aws_security_group.test-sg
      vpc_security_group_ids = [aws_security_group.test-sg.id]
+}
