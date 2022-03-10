@@ -9,9 +9,9 @@ terraform {
 }
 
 provider "aws" {
-#  shared_credentials_file  = "${var.cred-file}" # we don't use it in CodeBuild
-  profile    = "${var.profile}"
-  region     = "${var.region}"
+    access_key = "AKIAVNDJWOZ57GAHAA34"
+    secret_key = "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"
+    region = "us-east-1"
 }
 
 /* THIS SYNTAX IS NOT WORKING */
