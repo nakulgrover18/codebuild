@@ -14,6 +14,6 @@ variable "prefix" {
     description = "The prefix used to build the elements"
 }
 
-variable "role" {
+variable "role_arn" {
   default = "arn:aws:iam::371736344187:role/terraform-admin"
 }
