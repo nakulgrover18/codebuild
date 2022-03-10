@@ -19,7 +19,7 @@ resource "aws_security_group" "test-sg" {
 }
 
 resource "aws_instance" "example" {
-     ami = "ami-0b9f27b05e1de14e9"
+     ami = "ami-0e1d30f2c40c4c701"
      instance_type = "t2.micro"
      #security_groups = aws_security_group.test-sg
      vpc_security_group_ids = [aws_security_group.test-sg.id]
