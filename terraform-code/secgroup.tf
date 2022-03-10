@@ -6,7 +6,7 @@ resource "aws_security_group" "test-sg" {
   description = "${var.prefix} SG"
   egress {
     from_port   = 0
-    to_port     = 65534 # All outbound traffic
+    to_port     = 65535 # All outbound traffic
     protocol    = "TCP"
     cidr_blocks = ["0.0.0.0/0"]
    }
