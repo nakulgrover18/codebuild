@@ -1,4 +1,4 @@
-resource "aws_security_group" "crypto" {
+resource "aws_security_group" "test-sg" {
   name = "${var.prefix}"
   tags = {
         Name = "${var.prefix}"
